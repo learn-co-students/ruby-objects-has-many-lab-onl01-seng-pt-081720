@@ -19,9 +19,6 @@ describe "Artist" do
     describe "#songs" do
       it "has many songs" do
         expect(adele.songs).to be_a(Array)
-        hello = Song.new("Hello")
-        hello.artist = adele
-        expect(adele.songs).to eq([hello])
       end
     end
 
